@@ -1,0 +1,21 @@
+{
+  "name": "ftrianakast-web",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.3.4",
+    "jade": "*",
+    "stylus": "*",
+    "rekuire": "~0.1.5"
+  },
+  "description": "Personal web",
+  "main": "app.js",
+  "keywords": [
+    "software",
+    "development"
+  ],
+  "author": "Felipe Triana"
+}

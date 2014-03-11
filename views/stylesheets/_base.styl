@@ -1,0 +1,69 @@
+/*****************************************************************************/
+/*Colors
+/*****************************************************************************/
+gray = #f2f2f2
+green = #C2E15F
+orange = #FDA333
+purple = #D3A4F9
+red = #FB4485
+blue = #6CE0F1
+
+
+/*****************************************************************************/
+/*Typo
+/*****************************************************************************/
+.pt-serif
+	font-family: 'PT Serif', serif
+
+.pt-serif-light
+	@extend .pt-serif
+	font-weight: 300
+
+.pt-serif-regular
+	@extend .pt-serif
+	font-weight: 400
+
+.pt-serif-bold
+	@extend .pt-serif
+	font-weight: 600
+
+.open-sans
+	font-family: 'Open Sans', sans-serif
+
+
+/*****************************************************************************/
+/*Common components
+/*****************************************************************************/
+header 
+	@extends .pt-serif-bold
+	text-shadow: 0.02em 0.02em 0.05em #909090
+	background: white
+	height: 100px
+	.img-header
+		width: 80px
+		height: 80px
+		padding-top: 10px
+	ul
+		float: right
+		padding-top: 20px
+		font-size: 20px
+		li
+			
+body
+	background: gray
+
+footer
+	height: 150px
+	background: white
+
+/*****************************************************************************/
+/*Bootstrap overrides
+/*****************************************************************************/
+.nav.nav-tabs
+	border-color: transparent
+
+.nav.nav-tabs > li > a:hover
+	color: transparent
+	background-color: transparent
+	border-color: transparent
+	cursor: pointer
