@@ -9,8 +9,7 @@ var rek = require('rekuire')
 var express = rek('express')
 var http = rek('http')
 var path = rek('path')
-var app = express()
-
+var poet = rek('poet')
 
 // ------------------------------------------------------------------------------
 // Own Dependencies
@@ -18,9 +17,21 @@ var app = express()
 var Constants = rek('felipe/application/utils/contants')
 var Index = rek('felipe/application/routes/index')
 
+
+// ------------------------------------------------------------------------------
+// Variables
+// ------------------------------------------------------------------------------
+var app = express()
+
+
 // ------------------------------------------------------------------------------
 // All environments
 // ------------------------------------------------------------------------------
+app.configure('development', function() {
+    app.use(express.logger('dev'))
+    app.use(express.errorHandler())
+})
+
 app.configure(function() {
     app.set('port', process.env.PORT || Constants.SERVER_PORT)
     app.set('views', __dirname + '/views')
@@ -34,23 +45,30 @@ app.configure(function() {
         src: __dirname + '/views',
         dest: __dirname + '/public'
     }))
-    app.use(express.logger('dev'))
     app.use(express.static(__dirname + '/public'))
     app.use(app.router)
 })
 
 
 // ------------------------------------------------------------------------------
-// Development
-// ------------------------------------------------------------------------------
-if ('development' == app.get('env')) {
-    app.use(express.errorHandler())
-}
-
-// ------------------------------------------------------------------------------
 // Routes
 // ------------------------------------------------------------------------------
-app.get('/', Index.index)
+app.get('/', function(req, res, next) {
+    res.render('index')
+})
+app.get('/about', function(req, res, next) {
+    res.render('about')
+})
+app.get('/blog', function(req, res, next) {
+    res.render('blog')
+})
+
+
+// ------------------------------------------------------------------------------
+// Configure blog
+// ------------------------------------------------------------------------------
+var poet = poet(app)
+poet.init().then(function() {})
 
 
 // ------------------------------------------------------------------------------

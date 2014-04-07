@@ -1,13 +1,26 @@
 /*****************************************************************************/
 /*Colors
 /*****************************************************************************/
-gray = #f2f2f2
-green = #C2E15F
-orange = #FDA333
-purple = #D3A4F9
-red = #FB4485
-blue = #6CE0F1
+light_gray = #f2f2f2
+light_gray_2 = #d9d9d9
+gray = #9b9b9b
+dark_gray = #666
+hiper_gray = #333332
 
+blue = #51b2e9
+dark_blue = #4C769D
+
+light_black = #5e5e5d
+black = #111111
+
+light_green = #33bb88
+green = #28af7d
+
+pink = #ed6297
+
+yellow = #f5de78
+
+red = #ee796f
 
 /*****************************************************************************/
 /*Typo
@@ -30,40 +43,114 @@ blue = #6CE0F1
 .open-sans
 	font-family: 'Open Sans', sans-serif
 
+.open-sans-light
+	@extend .open-sans
+	font-weight: 200
+
+.open-sans-regular
+	@extend .open-sans
+	font-weight: 300
+
+.open-sans-bold
+	@extend .open-sans
+	font-weight: 400
+
+
+.lobster
+	font-family: 'Lobster'
+
 
 /*****************************************************************************/
-/*Common components
+/*Typographic mixings
 /*****************************************************************************/
-header 
-	@extends .pt-serif-bold
-	text-shadow: 0.02em 0.02em 0.05em #909090
-	background: white
-	height: 100px
-	.img-header
-		width: 80px
-		height: 80px
-		padding-top: 10px
-	ul
-		float: right
-		padding-top: 20px
-		font-size: 20px
-		li
-			
+h1
+	@extend .pt-serif-light
+	font-size: 30px
+	margin-bottom: 20px
+
+h2
+	@extend .open-sans-light
+	font-size: 25px
+	line-height: 120%
+
+h3
+	@extend .pt-serif-light	
+	font-size: 20px
+	line-height: 120%
+
+h4
+	@extend .open-sans-light
+	font-size: 14px
+	line-height: 145%
+
+h5
+	@extend .pt-serif-light
+	font-size: 14px
+	line-height: 120%
+
+
+
+/*****************************************************************************/
+/*Fact styles
+/*****************************************************************************/
+html, body
+	height: 90%
+
 body
-	background: gray
+	min-height: 100%
+	p
+		@extend .open-sans-regular
+		font-size: 14px
 
-footer
-	height: 150px
-	background: white
+.felipe-content
+	min-height: 900px
+	overflow: true
+	padding-top: 200px
+
+
+/*****************************************************************************/
+/*Section
+/*****************************************************************************/
+section
+	margin-bottom: 80px
+
+/*****************************************************************************/
+/*Link
+/*****************************************************************************/
+a
+	color: gray
+
+a:hover
+	text-decoration: none
+	background-color: transparent
+	border-color: transparent
+	cursor: pointer
+	color: dark_gray
+	padding-bottom: 8px
+	transition: border .2s linear, border-radius 1s ease-in 1s;
+
+	
 
 /*****************************************************************************/
 /*Bootstrap overrides
 /*****************************************************************************/
+
+
 .nav.nav-tabs
 	border-color: transparent
 
+.nav.nav-tabs > li > a
+	color: gray
+	padding: 0px
+	margin-left: 35px
+	
 .nav.nav-tabs > li > a:hover
-	color: transparent
 	background-color: transparent
 	border-color: transparent
 	cursor: pointer
+	color: dark_gray
+	border-bottom:3px solid dark_gray
+	padding-bottom: 8px
+	transition: border .2s linear, border-radius 1s ease-in 1s
+
+

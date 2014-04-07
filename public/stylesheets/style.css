@@ -2,84 +2,366 @@
 .pt-serif-light,
 .pt-serif-regular,
 .pt-serif-bold,
+h1,
+h3,
+h5,
 header {
   font-family: 'PT Serif', serif;
 }
-.pt-serif-light {
+.pt-serif-light,
+h1,
+h3,
+h5 {
   font-weight: 300;
 }
-.pt-serif-regular {
+.pt-serif-regular,
+header {
   font-weight: 400;
 }
-.pt-serif-bold,
-header {
+.pt-serif-bold {
   font-weight: 600;
 }
-.open-sans {
+.open-sans,
+.open-sans-light,
+.open-sans-regular,
+.open-sans-bold,
+h2,
+h4,
+body p {
   font-family: 'Open Sans', sans-serif;
 }
-header {
-  text-shadow: 0.02em 0.02em 0.05em #909090;
-  background: #fff;
-  height: 100px;
+.open-sans-light,
+h2,
+h4 {
+  font-weight: 200;
 }
-header .img-header {
-  width: 80px;
-  height: 80px;
-  padding-top: 10px;
+.open-sans-regular,
+body p {
+  font-weight: 300;
 }
-header ul {
-  float: right;
-  padding-top: 20px;
+.open-sans-bold {
+  font-weight: 400;
+}
+.lobster {
+  font-family: 'Lobster';
+}
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 25px;
+  line-height: 120%;
+}
+h3 {
   font-size: 20px;
-li
+  line-height: 120%;
+}
+h4 {
+  font-size: 14px;
+  line-height: 145%;
+}
+h5 {
+  font-size: 14px;
+  line-height: 120%;
+}
+html,
+body {
+  height: 90%;
 }
 body {
-  background: #f2f2f2;
+  min-height: 100%;
 }
-footer {
-  height: 150px;
-  background: #fff;
+body p {
+  font-size: 14px;
+}
+.felipe-content {
+  min-height: 900px;
+  overflow: true;
+  padding-top: 200px;
+}
+section {
+  margin-bottom: 80px;
+}
+a {
+  color: #9b9b9b;
+}
+a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: #666;
+  padding-bottom: 8px;
+  transition: border 0.2s linear, border-radius 1s ease-in 1s;
 }
 .nav.nav-tabs {
   border-color: transparent;
 }
+.nav.nav-tabs > li > a {
+  color: #9b9b9b;
+  padding: 0px;
+  margin-left: 35px;
+}
 .nav.nav-tabs > li > a:hover {
-  color: transparent;
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
+  color: #666;
+  border-bottom: 3px solid #666;
+  padding-bottom: 8px;
+  transition: border 0.2s linear, border-radius 1s ease-in 1s;
 }
 .tex-color-green {
-  color: #c2e15f;
+  color: #28af7d;
 }
 .tex-color-orange {
-  color: #fda333;
+  color: #ffa500;
 }
 .tex-color-purple {
-  color: #d3a4f9;
+  color: #800080;
 }
 .tex-color-red {
-  color: #fb4485;
+  color: #ee796f;
 }
 .tex-color-blue {
-  color: #6ce0f1;
+  color: #51b2e9;
 }
 .background-green {
-  background-color: #c2e15f;
+  background-color: #28af7d;
 }
 .background-orange {
-  background-color: #fda333;
+  background-color: #ffa500;
 }
 .background-purple {
-  background-color: #d3a4f9;
+  background-color: #800080;
 }
 .background-red {
-  background-color: #fb4485;
+  background-color: #ee796f;
 }
 .background-blue {
-  background-color: #6ce0f1;
+  background-color: #51b2e9;
+}
+.lobster {
+  font-family: 'lobster' !important;
+}
+.shadow,
+.post_item {
+  width: 100%;
+  z-index: 999;
+  -webkit-box-shadow: 0px 3px 5px rgba(51,51,51,0.3);
+  -moz-box-shadow: 0px 3px 5px rgba(51,51,51,0.3);
+  box-shadow: 0px 3px 5px rgba(51,51,51,0.3);
 }
 .text-shadow-subtle {
   text-shadow: 0.02em 0.02em 0.04em #909090;
+}
+.little_coin_logo {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+.coin {
+  width: 130px;
+  height: 130px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.8);
+  -moz-box-shadow: 0 0 8px rgba(0,0,0,0.8);
+}
+.coin_light {
+  width: 130px;
+  height: 130px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+header {
+  width: 100%;
+  background: #fff;
+  height: 100px;
+  position: fixed;
+}
+header ul {
+  float: right;
+  padding-top: 35px;
+  font-size: 15px;
+}
+header ul li {
+  margin-left: 10px;
+  position: fixed;
+}
+header .title {
+  float: left;
+  margin-top: 15px;
+}
+header .title .little_coin_logo h1 {
+  font-size: 30px;
+  padding-left: 16px;
+  margin-top: 9px;
+}
+header .title .name {
+  padding-left: 8px;
+  display: inline-block;
+}
+header .title .name h5 {
+  font-size: 15px;
+}
+body {
+  height: 90%;
+  background: #f2f2f2;
+}
+footer {
+  height: 400px;
+  background: #fff;
+  color: #d9d9d9;
+}
+footer .contact {
+  text-align: center;
+  margin-top: 100px;
+}
+footer .contact a {
+  margin-left: 80px;
+  padding: 0px;
+}
+footer .contact a i {
+  font-size: 50px;
+  color: #d9d9d9;
+}
+footer .copyright {
+  margin-top: 40px;
+  text-align: center;
+  margin-left: 80px;
+}
+footer .copyright h5 {
+  display: inline;
+}
+a.bluehover:hover i {
+  color: #51b2e9;
+}
+a.darkbluehover:hover i {
+  color: #4c769d;
+}
+a.yellowhover:hover i {
+  color: #f5de78;
+}
+a.greenhover:hover i {
+  color: #28af7d;
+}
+a.darkgrayhover:hover i {
+  color: #666;
+}
+.contact .coin {
+  margin-left: 50px;
+  margin-top: 15px;
+}
+#about {
+  text-align: justify;
+  -moz-border-radius: 30px;
+  -khtml-border-radius: 30px;
+  -webkit-border-radius: 30px;
+}
+#about .coin {
+  background: url("./../images/ft.jpg");
+}
+#about img {
+  margin-left: 60px;
+  width: 100px;
+  border-radius: 30px;
+}
+#about .sub-contact {
+  padding-top: 40px;
+}
+#about .sub-contact .cv {
+  float: left;
+}
+#about .sub-contact .cv a {
+  display: inline;
+}
+#about .sub-contact .cv a i {
+  margin-left: 0px;
+  margin-right: 15px;
+}
+#about .sub-contact .cv h4 {
+  display: inline;
+}
+#about .sub-contact .social {
+  padding-top: 5px;
+  float: right;
+}
+#about .sub-contact i {
+  margin-left: 20px;
+  font-size: 20px;
+}
+#programming-languages {
+  text-align: justify;
+}
+#programming-languages .coin {
+  text-align: center;
+  padding-top: 35px;
+}
+#programming-languages .coin i {
+  font-size: 60px;
+}
+#programming-languages .languages-images {
+  text-align: center;
+  margin-top: 60px;
+}
+#programming-languages .languages-images a i {
+  font-size: 100px;
+  margin-right: 80px;
+}
+#programming-languages .languages-images a img {
+  margin-right: 80px;
+  margin-top: -60px;
+  width: 100px;
+}
+#programming-languages .languages-images a h5 {
+  display: inline;
+  font-size: 100px;
+}
+#me {
+  text-align: justify;
+}
+#me .coin {
+  text-align: center;
+  padding-top: 30px;
+}
+#me .coin i {
+  font-size: 60px;
+}
+#blog {
+  text-align: center;
+}
+.post_item {
+  display: inline-block;
+  white-space: normal;
+  float: none;
+  text-align: center !important;
+  background: #fff;
+  margin: 30px;
+  width: 300px;
+  height: 400px;
+}
+.post_item .title {
+  float: none;
+  padding: 20px;
+}
+.post_item .title .coin_light {
+  margin: 40px;
+  margin-left: 65px !important;
+}
+.post_item .body p {
+  font-size: 12px;
 }

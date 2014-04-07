@@ -1,0 +1,22 @@
+doctype html
+html
+	head
+		meta(charset='utf8')
+		title Felipe Triana
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/bower_components/font-awesome/css/font-awesome.css')
+		link(rel='stylesheet', href='/bower_components/font-mfizz/css/font-mfizz.css')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=PT+Serif')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lobster')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+
+
+	body
+		script(type='text/javascript', src='/bower_components/jquery/dist/jquery.min.js')
+		script(type='text/javascript', src='/javascripts/bootstrap.min.js')
+		include ./../includes/header
+		div.felipe-content.container
+			block content
+		include ./../includes/footer
+	

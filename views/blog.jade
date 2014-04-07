@@ -1,0 +1,7 @@
+extends layouts/layout
+
+block content
+	section#blog
+		- var posts = getPosts(0,100)
+			- each post in posts
+				include includes/postSnippet

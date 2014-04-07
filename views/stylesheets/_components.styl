@@ -1,3 +1,177 @@
 /*****************************************************************************/
-/*Header
+/*Common components
 /*****************************************************************************/
+header 
+	@extends .pt-serif-regular
+	width: 100%
+	background: white
+	height: 100px
+	position: fixed
+	ul 
+		float: right
+		padding-top: 35px
+		font-size: 15px
+		li
+			margin-left: 10px
+			position: fixed
+	.title
+		float: left
+		margin-top: 15px
+		.little_coin_logo
+			h1
+				font-size: 30px
+				padding-left: 16px
+				margin-top: 9px
+		.name
+			padding-left: 8px
+			display: inline-block
+			h5
+				font-size: 15px
+			
+
+
+body
+	height: 90%
+	background: light_gray
+
+footer
+	height: 400px
+	background: white
+	color: light_gray_2
+	.contact
+		text-align: center
+		margin-top: 100px
+		a
+			margin-left: 80px
+			padding: 0px
+			i
+				font-size: 50px
+				color: light_gray_2
+
+	.copyright
+		margin-top: 40px
+		text-align: center
+		margin-left: 80px
+		h5
+			display: inline
+
+a.bluehover:hover
+	i
+		color: blue
+a.darkbluehover:hover
+	i
+		color: dark_blue
+
+a.yellowhover:hover
+	i
+		color: yellow
+
+a.greenhover:hover
+	i
+		color: green
+a.darkgrayhover:hover
+	i
+		color: dark_gray			
+
+/*****************************************************************************/
+/*Sections
+/*****************************************************************************/
+
+/*****************************************************************************/
+/*Home page
+/*****************************************************************************/
+
+
+
+/*****************************************************************************/
+/*About Page
+/*****************************************************************************/
+.contact
+	.coin
+		margin-left: 50px
+		margin-top: 15px
+
+#about
+	text-align: justify
+	.coin
+		background: url('./../images/ft.jpg')		
+	img
+		margin-left: 60px
+		width: 100px
+		border-radius: 30px
+	    -moz-border-radius: 30px
+	    -khtml-border-radius: 30px
+	    -webkit-border-radius: 30px
+	.sub-contact
+		padding-top: 40px
+		.cv
+			float: left
+			a
+				display: inline
+				i
+					margin-left: 0px
+					margin-right: 15px
+			h4
+				display: inline
+		.social
+			padding-top: 5px
+			float: right
+		i
+			margin-left: 20px
+			font-size: 20px
+
+#programming-languages
+	text-align: justify
+	.coin
+		text-align: center
+		padding-top: 35px
+		i
+			font-size: 60px
+	.languages-images
+		text-align: center
+		margin-top: 60px
+		a
+			i
+				font-size: 100px
+				margin-right: 80px
+			img
+				margin-right: 80px
+				margin-top: -60px
+				width: 100px
+			h5
+				display: inline
+				font-size: 100px
+
+#me
+	text-align: justify
+	.coin
+		text-align: center
+		padding-top: 30px
+		i
+			font-size: 60px
+
+/*****************************************************************************/
+/*Blog page
+/*****************************************************************************/
+#blog
+	text-align: center
+
+.post_item
+	@extends .shadow
+	display: inline-block
+	white-space: normal
+	float: none
+	text-align: center !important
+	background: white
+	margin: 30px
+	width: 300px
+	height: 400px
+	.title
+		float: none
+		padding: 20px
+		.coin_light
+			margin: 40px
+			margin-left: 65px !important
+	.body
+		p
+			font-size: 12px		

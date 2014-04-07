@@ -9,7 +9,8 @@
     "express": "3.3.4",
     "jade": "*",
     "stylus": "*",
-    "rekuire": "~0.1.5"
+    "rekuire": "~0.1.5",
+    "poet": "~1.0.0-rc4"
   },
   "description": "Personal web",
   "main": "app.js",
