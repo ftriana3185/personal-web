@@ -1,6 +1,15 @@
-.post_item
-	.title
-		h3= post.title
-		.coin_light(style='background-image: url('+'#{post.img_url}'+')')
-		.body
-			p= post.description
+a(href=post.url)
+	.post_item
+		.title
+			h3= post.title
+			p #{parseDate(post.date)}
+			.coin_light(style='background-image: url('+'#{post.img_url}'+')')
+		.footer
+			a.addthis_button(href='http://www.addthis.com/bookmark.php?v=300&pubid=ra-53753fbc68870923')
+				img(src='http://s7.addthis.com/static/btn/v2/lg-share-en.gif', width='125', height='20', alt='Bookmark and Share', style='border: 0;')
+
+
+		-function parseDate(date){
+			-var date = new Date(date)
+			-return date.toDateString() 
+		-}

@@ -1,0 +1,20 @@
+extends layouts/layout
+
+block content
+	script(type='text/javascript').
+		addthis.layers({
+		'share' : {
+		'position' : 'left',
+		'numPreferredServices' : 4}});
+
+	section#post
+		.head
+			h1.title #{post.title}
+			p.date #{parseDate(post.date)}
+		.body
+			!= post.content
+
+		-function parseDate(date){
+			-var date = new Date(date)
+			-return date.toDateString() 
+		-}

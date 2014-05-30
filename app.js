@@ -54,7 +54,7 @@ app.configure(function() {
 // Routes
 // ------------------------------------------------------------------------------
 app.get('/', function(req, res, next) {
-    res.render('index')
+    res.render('about')
 })
 app.get('/about', function(req, res, next) {
     res.render('about')

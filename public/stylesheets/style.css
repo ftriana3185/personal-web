@@ -78,7 +78,7 @@ body p {
 .felipe-content {
   min-height: 900px;
   overflow: true;
-  padding-top: 200px;
+  padding: 200px 60px 200px 60px;
 }
 section {
   margin-bottom: 80px;
@@ -88,7 +88,6 @@ a {
 }
 a:hover {
   text-decoration: none;
-  background-color: transparent;
   border-color: transparent;
   cursor: pointer;
   color: #666;
@@ -111,6 +110,9 @@ a:hover {
   border-bottom: 3px solid #666;
   padding-bottom: 8px;
   transition: border 0.2s linear, border-radius 1s ease-in 1s;
+}
+figcaption {
+  margin-top: 10px;
 }
 .tex-color-green {
   color: #28af7d;
@@ -147,8 +149,7 @@ a:hover {
 }
 .shadow,
 .post_item {
-  width: 100%;
-  z-index: 999;
+  z-index: 1;
   -webkit-box-shadow: 0px 3px 5px rgba(51,51,51,0.3);
   -moz-box-shadow: 0px 3px 5px rgba(51,51,51,0.3);
   box-shadow: 0px 3px 5px rgba(51,51,51,0.3);
@@ -190,7 +191,7 @@ a:hover {
 header {
   width: 100%;
   background: #fff;
-  height: 100px;
+  height: 90px;
   position: fixed;
 }
 header ul {
@@ -341,6 +342,13 @@ a.darkgrayhover:hover i {
 #me .coin i {
   font-size: 60px;
 }
+#post .head {
+  text-align: center;
+}
+#post .body {
+  text-align: justify;
+  margin-top: 50px;
+}
 #blog {
   text-align: center;
 }
@@ -364,4 +372,14 @@ a.darkgrayhover:hover i {
 }
 .post_item .body p {
   font-size: 12px;
+}
+.post_item .footer {
+  text-align: center;
+}
+.post_item .footer .addthis_toolbox {
+  width: 50%;
+}
+.post_item .footer .addthis_toolbox .addthis_button {
+  margin: 0;
+  padding: 0;
 }
