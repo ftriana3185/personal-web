@@ -2,7 +2,7 @@
     "title"    			: "Docker, aplastando maquinas virtuales I",
     "Category"			: "Computer Science",
     "tags"     			: [ "Docker", "Infrastructure", "Computer Science"],
-    "date"     			: "05-30-2014",
+    "date"     			: "06-02-2014",
     "lang"     			: "es",
     "description"  		: "Docker se expone como un reemplazo a las máquinas virtuales de bajo costo",
     "img_url"			: "images/docker.png"
