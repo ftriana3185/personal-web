@@ -20,7 +20,7 @@
 
 ## Introducción
 
-En esta primera entrada intentaré dar una introducción teórica a Docker y daré algunos de los comandos básicos para comenzar a utilizarlo. En las siguientes entradas profundizaré sobre algunos de los aspectos de Docker que facilitan el despliegue de aplicaciones en cualquier ambiente: desarrollo, puesta en escena y producción. Específicamente describiré el despliegue de una aplicación <strong>NodeJS</strong> que utiliza una base de datos <strong>MongoDB</strong>.
+En esta primera entrada intentaré dar una introducción teórica a Docker. En las siguientes entradas profundizaré sobre algunos de los aspectos de Docker que facilitan el despliegue de aplicaciones en cualquier ambiente: desarrollo, puesta en escena y producción. Específicamente describiré el despliegue de una aplicación <strong>NodeJS</strong> que utiliza una base de datos <strong>MongoDB</strong>.
 
 ## Historia
 
