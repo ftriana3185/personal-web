@@ -20,7 +20,7 @@
 
 ## Introducción
 
-En esta primera entrada intentaré dar una introducción teórica a Docker. En las siguientes entradas profundizaré sobre algunos de los aspectos de Docker que facilitan el despliegue de aplicaciones en cualquier ambiente: desarrollo, puesta en escena y producción. Específicamente describiré el despliegue de una aplicación <strong>NodeJS</strong> que utiliza una base de datos <strong>MongoDB</strong>.
+En esta primera entrada intentaré dar una introducción teórica a Docker, un proyecto que se presenta como una alternativa a las máquinas virtuales.
 
 ## Historia
 
@@ -36,7 +36,7 @@ Un ambiente de estos que describo es muy caro en términos computacionales y en 
 
 
 <figure style='text-align:center; margin: 50px'>
-	<img src='https://s3-us-west-2.amazonaws.com/ftrianakast/personal-web/images/virtual_machine.png', alt='Virtual Machine', class='shadow'></img>
+	<img src='https://dl.dropboxusercontent.com/u/21608465/Personal%20Web/virtual_machine.png', alt='Virtual Machine', class='shadow'></img>
 	<figcaption>Fig 1: Máquina Virtual</figcaption>
 </figure>
 
@@ -45,9 +45,8 @@ Oracle con [Virtual Box][7], y [VMware][8] eran dueños del negocio hasta hace p
 
 Docker es una capa construida sobre LXC (precisamente para aquellos como yo que no entendemos mucho sobre los detalles técnicos del kernel Linux) que simplifica el proceso de empaquetar una aplicación dentro de un contenedor, de distribuirlo, de construir nuevos contenedores sobre éste y de correrlo en cualquier parte: Cloud, localmente (probablemente correría hasta en la lavadora de mi abuelita: <strong>filosofía JAVA</strong>). Docker vendría a representarse de la siguiente forma:
 
-
 <figure style='text-align:center; margin: 50px'>
-	<img src='https://s3-us-west-2.amazonaws.com/ftrianakast/personal-web/images/docker.png', alt='Docker', class='shadow'></img>
+	<img src='https://dl.dropboxusercontent.com/u/21608465/Personal%20Web/docker.png', alt='Docker', class='shadow'></img>
 	<figcaption>Fig 2: Docker</figcaption>
 </figure>
 
@@ -57,4 +56,4 @@ La razón de porque Docker ha adquirido tanta inversión en tan poco tiempo, est
 
 Docker se convierte claramente en una alternativa excelente para las máquinas virtuales que en tan sólo 2 años a acaparado la atención de una buena parte del mercado. Algunos podrían considerar que su principal desventaja es que sólo funciona sobre sistemas operativos construidos sobre el kernel de Linux, sin embargo estoy seguro de que los muchachos de Docker Inc trabajarán para llevar la solución a Windows prontamente, o tal vez lo pueda hacer usted antes que ellos ([puede partir de acá][9]).
 
-Este primer post es sólo un abrebocas y hace parte del primer paso en la experimentación a la que estará sometido este blog. En la próxima entrada intentaré aterrizar un ejemplo concreto de uso de docker. Un saludo.  
+Este primer post es sólo un abrebocas y hace parte del primer paso en la experimentación a la que estará sometido este blog. Un saludo.  
