@@ -2,10 +2,10 @@
     "title"    			: "Desenredando conceptos: SOA, Rest, SOAP y otros",
     "Category"			: "Computer Science",
     "tags"     			: [ "SOA", "REST", "SOAP"],
-    "date"     			: "06-02-2014",
+    "date"     			: "10-24-2014",
     "lang"     			: "es",
-    "description"   : "",
-    "img_url"			  : "images/SOA_logo.jpg"
+    "description"       : "",
+    "img_url"			: "images/SOA_logo.jpg"
 }}}
 
 [1]: http://www.viewpoints-and-perspectives.info/
@@ -113,7 +113,7 @@ Por último hablaré del modelo de madurez de Richardson que se refiere a REST y
 
 - Nivel 2: Múltiples URIs, cada una soportando múltiples métodos HTTP. Se presenta el mismo problema conceptual del Nivel 0. Es importante enunciar que muchos de los que desarrollamos (me incluyo) solamente hemos llegado hasta este nivel.
 
-- Nivel 3: Eń el nivel de __Hipermedia__ los __recursos__ exponen sus propias capacidades e interconexiones. Aquí no quiero pecar por ignorante. Sólo puedo mencionar que muy pocos sistemas exponen este comportamiento; [__Netflix__][8] es uno de ellos.
+- Nivel 3: Eń el nivel de __Hipermedia__ los __recursos__ exponen sus propias capacidades e interconexiones. Aquí no quiero pecar por ignorante. Sólo puedo mencionar que muy pocos sistemas exponen este comportamiento: [__Netflix__][8] es uno de ellos.
 
 Si bien __Richardson__ liga su modelo de madurez a __HTTP__; pasando por encima de las diferencias conceptuales que expone __Fielding__ en su tesis, este modelo es muy práctico y a mí parecer aterriza (o por lo menos nos pone a discutir) muchos de los elementos, conectores, configuraciones y restricciones de este __estilo arquitectural__. 
 
@@ -159,7 +159,7 @@ Nuestro diagrama va así:
 
 ### Desenredando la pita: paso 4, protocolos de comunicación
 
-Finalmente están los protocolos de comunicación. Está claro que deben ser distintos a los demás conceptos definidos con anterioridad. Uno podría tener servicios __Rest__ sobre __SOAP__ es una frase que alguien le parecería extraño, pero que dados los argumentos anteriores puede ver que esto es posible. Finalmente el gráfico nos queda así:
+Finalmente están los protocolos de comunicación. Está claro que deben ser distintos a los demás conceptos definidos con anterioridad. "Uno podría tener servicios __Rest__ sobre __SOAP__" es una frase que alguien le parecería extraña, pero que dados los argumentos anteriores se puede ver que esto es posible. Finalmente el gráfico nos queda así:
 
 
 <figure style='text-align:center; margin: 50px'>
@@ -169,4 +169,4 @@ Finalmente están los protocolos de comunicación. Está claro que deben ser dis
 
 ## Conclusión
 
-Espero habernos ayudado a entender un poco mejor las relaciones y significados de todos estos conceptos. Como nota final sería bueno establecer una base de conocimiento: __ontología__ de nuestra área por lo menos para no perdernos fácilmente. En una parte de esa ontología se podría incluir los conceptos expresados en este post. A mi parecer sería de gran ayuda educativa. Por último si me enrede en el post de desenredamiento anterior, les agradecería mucho si me ayudan a desenredarme [ftrianakast@gmail.com][12]
+Espero habernos ayudado a entender un poco mejor las relaciones y significados de todos estos conceptos. Como nota final sería bueno establecer una base de conocimiento (__ontología__) de nuestra área por lo menos para no perdernos fácilmente. En una parte de esa ontología se podría incluir los conceptos expresados en este post. A mi parecer sería de gran ayuda educativa. Por último si me enrede en el post de desenredamiento anterior, les agradecería mucho si me ayudan a desenredarme. [ftrianakast@gmail.com][12]
