@@ -301,11 +301,12 @@ a.darkgrayhover:hover i {
   float: left;
 }
 #about .sub-contact .cv a {
+  margin-right: 30px;
   display: inline;
 }
 #about .sub-contact .cv a i {
   margin-left: 0px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 #about .sub-contact .cv h4 {
   display: inline;
