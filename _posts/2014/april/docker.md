@@ -1,5 +1,5 @@
 {{{
-    "title"    			: "Docker, aplastando maquinas virtuales I",
+    "title"    			: "Docker, aplastando maquinas virtuales",
     "Category"			: "Computer Science",
     "tags"     			: [ "Docker", "Infrastructure", "Computer Science"],
     "date"     			: "06-02-2014",
@@ -55,5 +55,3 @@ La razón de porque Docker ha adquirido tanta inversión en tan poco tiempo, est
 ## Cierre
 
 Docker se convierte claramente en una alternativa excelente para las máquinas virtuales que en tan sólo 2 años a acaparado la atención de una buena parte del mercado. Algunos podrían considerar que su principal desventaja es que sólo funciona sobre sistemas operativos construidos sobre el kernel de Linux, sin embargo estoy seguro de que los muchachos de Docker Inc trabajarán para llevar la solución a Windows prontamente, o tal vez lo pueda hacer usted antes que ellos ([puede partir de acá][9]).
-
-Este primer post es sólo un abrebocas y hace parte del primer paso en la experimentación a la que estará sometido este blog. Un saludo.  
